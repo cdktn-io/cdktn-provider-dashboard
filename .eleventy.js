@@ -23,6 +23,6 @@ module.exports = function (eleventyConfig) {
       includes: "_includes",
       layouts: "_layouts",
     },
-    pathPrefix: "/cdktf-provider-dashboard/",
+    pathPrefix: "/cdktn-provider-dashboard/",
   };
 };

@@ -41,7 +41,7 @@ async function processWorkflows(data) {
 async function getWorkflows(github, repoName) {
   console.log("Workflows for: ", repoName);
   const { data } = await github.actions.listWorkflowRunsForRepo({
-    owner: "cdktf",
+    owner: "cdktn-io",
     repo: repoName,
   });
 
@@ -51,7 +51,7 @@ async function getWorkflows(github, repoName) {
 async function getIssues(github, repoName) {
   console.log("Issues for: ", repoName);
   const { data } = await github.rest.issues.listForRepo({
-    owner: "cdktf",
+    owner: "cdktn-io",
     repo: repoName,
     state: "open",
   });
@@ -63,11 +63,11 @@ async function getRelease(github, repoName) {
   console.log("Release for: ", repoName);
   try {
     const { data } = await github.rest.repos.getLatestRelease({
-      owner: "cdktf",
+      owner: "cdktn-io",
       repo: repoName,
       state: "open",
     });
-  
+
     return data;
   } catch (e) {
     console.log("No release found for: ", repoName);
@@ -85,7 +85,7 @@ async function getPackageJson(github, repoName) {
   console.log("Package.json for: ", repoName);
   try {
     const { data } = await github.rest.repos.getContent({
-      owner: "cdktf",
+      owner: "cdktn-io",
       repo: repoName,
       path: "package.json",
     });
@@ -101,14 +101,12 @@ const providerNameOverrides = {
   googlebeta: {
     typescript: "google-beta",
     python: "google_beta",
-    java: "google-beta",
-    csharp: "GoogleBeta",
     go: "googlebeta",
   },
 };
 
 function convertRepoNameForLanguage(repoName, language) {
-  let providerName = repoName.replace("cdktf-provider-", "");
+  let providerName = repoName.replace("cdktn-provider-", "");
   const hasOverrides = !!providerNameOverrides[providerName];
   providerName = hasOverrides
     ? providerNameOverrides[providerName][language]
@@ -116,15 +114,11 @@ function convertRepoNameForLanguage(repoName, language) {
 
   switch (language) {
     case "typescript":
-      return `@cdktf/provider-${providerName}`;
+      return `@cdktn/provider-${providerName}`;
     case "python":
-      return `cdktf-cdktf-provider-${providerName}`;
-    case "java":
-      return hasOverrides ? `cdktf-provider-${providerName}` : repoName;
-    case "csharp":
-      return `HashiCorp.Cdktf.Providers.${providerName}`; // The API is agnostic to character casing
+      return `cdktn-provider-${providerName}`;
     case "go":
-      return `github.com/cdktf/cdktf-provider-${providerName}-go/${providerName}`;
+      return `github.com/cdktn-io/cdktn-provider-${providerName}-go/${providerName}`;
   }
 }
 
@@ -182,65 +176,10 @@ async function getPypiPackageVersion(repoName) {
   };
 }
 
-async function getMavenPackageVersion(repoName) {
-  const packageName = convertRepoNameForLanguage(repoName, "java");
-  const url = `https://search.maven.org/solrsearch/select?q=a:${packageName}&rows=20&wt=json`;
-  let doc;
-
-  try {
-    const response = await fetch(url, {
-      signal: AbortSignal.timeout(10000), // timeout the API call after 10 seconds
-    });
-    if (!response.ok) {
-      return null;
-    }
-    const data = await response.json();
-    doc = data.response.docs[0];
-  } catch (e) {
-    if (e.name === "TimeoutError" || e.name === "AbortError") {
-      console.error(`Request to ${url} timed out after 10 seconds`);
-    }
-  }
-
-  if (!doc) return null;
-  return {
-    version: doc.latestVersion,
-    packageUrl: `https://mvnrepository.com/artifact/com.hashicorp/${packageName}/${doc.latestVersion}`,
-    releaseDate: new Date(doc.timestamp).toISOString(),
-  };
-}
-
-async function getNuGetPackageVersion(repoName) {
-  const packageName = convertRepoNameForLanguage(repoName, "csharp");
-  const url = `https://azuresearch-usnc.nuget.org/query?q=${packageName}&prerelease=false`;
-  let info;
-
-  try {
-    const response = await fetch(url, {
-      signal: AbortSignal.timeout(10000), // timeout the API call after 10 seconds
-    });
-    if (!response.ok) {
-      return null;
-    }
-    const data = await response.json();
-    info = data.data[0];
-  } catch (e) {
-    if (e.name === "TimeoutError" || e.name === "AbortError") {
-      console.error(`Request to ${url} timed out after 10 seconds`);
-    }
-  }
-
-  if (!info) return null;
-  return {
-    version: info.version,
-    packageUrl: `https://www.nuget.org/packages/${packageName}`,
-  };
-}
-
 async function getGoReleaseVersion(repoName) {
   const packageName = convertRepoNameForLanguage(repoName, "go");
   const goRepoName = repoName + "-go";
-  const allTagsUrl = `https://api.github.com/repos/cdktf/${goRepoName}/tags`;
+  const allTagsUrl = `https://api.github.com/repos/cdktn-io/${goRepoName}/tags`;
   let firstTag;
 
   try {
@@ -291,6 +230,25 @@ async function getLatestCdktfVersion() {
   return data["dist-tags"].latest;
 }
 
+async function getLatestCdktnVersion() {
+  const url = "https://registry.npmjs.org/cdktn";
+  let data;
+
+  try {
+    const response = await fetch(url, {
+      signal: AbortSignal.timeout(5000), // timeout the API call after 5 seconds
+    });
+    data = await response.json();
+  } catch (e) {
+    if (e.name === "TimeoutError" || e.name === "AbortError") {
+      console.error(`Request to ${url} timed out after 5 seconds`);
+    }
+    return null;
+  }
+
+  return data["dist-tags"].latest || data["dist-tags"].next || null;
+}
+
 async function getLatestProviderVersion(name, url) {
   console.log("Fetching provider info: ", name);
   try {
@@ -318,21 +276,21 @@ async function getLatestProviderVersion(name, url) {
   }
 }
 
-const ignoredRepos = ["cdktf-provider-project", "cdktf-provider-dashboard"];
+const ignoredRepos = ["cdktn-provider-project", "cdktn-provider-dashboard"];
 async function getAllPrebuiltRepos(github) {
   console.log("Getting all repo names");
   return github.paginate(
     github.rest.repos.listForOrg,
     {
       per_page: 100,
-      org: "cdktf",
+      org: "cdktn-io",
       type: "public",
       filter: "",
     },
     (response) =>
       response.data.filter(
         (repo) =>
-          repo.name.startsWith("cdktf-provider-") &&
+          repo.name.startsWith("cdktn-provider-") &&
           !repo.name.endsWith("-go") &&
           !ignoredRepos.includes(repo.name)
       ).sort((a, b) => {
@@ -394,6 +352,7 @@ async function delay(ms) {
 
   const repos = await getAllPrebuiltRepos(github);
   const latestCdktfVersion = await getLatestCdktfVersion();
+  const latestCdktnVersion = await getLatestCdktnVersion();
   const numArchived = repos.reduce((count, repo) => count + (repo.archived ? 1 : 0), 0);
 
   for (const repo of repos) {
@@ -419,6 +378,7 @@ async function delay(ms) {
     };
     repo.latestRelease = latestRelease;
     repo.latestCdktfVersion = latestCdktfVersion;
+    repo.latestCdktnVersion = latestCdktnVersion;
     repo.numArchived = numArchived;
 
     if (repo.packageJson.cdktf && repo.packageJson.cdktf.provider) {
@@ -440,8 +400,6 @@ async function delay(ms) {
     repo.packageManagerVersions = {
       npm: await getNpmPackageVersion(repo.name),
       pypi: await getPypiPackageVersion(repo.name),
-      maven: await getMavenPackageVersion(repo.name),
-      nuget: await getNuGetPackageVersion(repo.name),
       go: await getGoReleaseVersion(repo.name),
     };
 

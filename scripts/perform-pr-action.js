@@ -20,7 +20,7 @@ async function getPullRequestsForOrg(github, orgName) {
     return github.paginate(
         github.search.issuesAndPullRequests,
         {
-            q: `org:${orgName} is:pr is:closed -is:merged "chore(deps)!: Updated CDKTF version to \`0.15.0\`"`,
+            q: `org:${orgName} is:pr is:closed -is:merged "chore(deps)!: Updated CDKTN version to \`0.15.0\`"`,
         });
 
     // const { data } = await github.search.issuesAndPullRequests({
@@ -45,7 +45,7 @@ async function reopenPullRequests(github, pullRequests) {
         try {
 
             await github.pulls.update({
-                owner: "cdktf",
+                owner: "cdktn-io",
                 repo: repoName,
                 pull_number: pr.number,
                 state: "open"
@@ -81,7 +81,7 @@ async function reopenPullRequests(github, pullRequests) {
         }
     });
 
-    const pullRequests = await getPullRequestsForOrg(github, "cdktf")
+    const pullRequests = await getPullRequestsForOrg(github, "cdktn-io")
 
     await fs.writeFile("prs.json", JSON.stringify(pullRequests, null, 2))
 

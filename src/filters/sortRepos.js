@@ -38,12 +38,8 @@ function sortByProblems(a, b) {
     repoCountFailingWorkflows(b) - repoCountFailingWorkflows(a) ||
     isMajorOutofDate(b) - isMajorOutofDate(a) ||
     isPackageManagerOutOfDate("npm", b) - isPackageManagerOutOfDate("npm", a) ||
-    isPackageManagerOutOfDate("maven", b) -
-      isPackageManagerOutOfDate("maven", a) ||
     isPackageManagerOutOfDate("pypi", b) -
       isPackageManagerOutOfDate("pypi", a) ||
-    isPackageManagerOutOfDate("nuget", b) -
-      isPackageManagerOutOfDate("nuget", a) ||
     isPackageManagerOutOfDate("go", b) - isPackageManagerOutOfDate("go", a) ||
     b.issues.length - a.issues.length ||
     b.pulls.length - a.pulls.length

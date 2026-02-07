@@ -1,8 +1,8 @@
 {
-  "name": "cdktf-provider-dashboard",
+  "name": "cdktn-provider-dashboard",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:cdktf/cdktf-provider-dashboard.git",
+  "repository": "git@github.com:cdktn-io/cdktn-provider-dashboard.git",
   "author": "Mutahhir Hayat <mutahhir.hayat@hashicorp.com>",
   "license": "MPL-2.0",
   "scripts": {

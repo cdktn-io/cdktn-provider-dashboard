@@ -7,13 +7,14 @@ layout: base
 -->
 <main class="w-screen">
 <h1 class="text-4xl font-bold text-slate-900 dark:text-slate-100 mt-3 flex flex-row space-x-2 items-center ml-4">
-    <span>CDKTF Pre-built provider health dashboard</span>
-    <a href="https://github.com/cdktf/cdktf-provider-dashboard" target="_blank">
+    <span>CDKTN Pre-built provider health dashboard</span>
+    <a href="https://github.com/cdktn-io/cdktn-provider-dashboard" target="_blank">
         <span class="fill-slate-700 dark:fill-slate-300">{% githubIcon 'repo' %}</span>
     </a>
 </h1>
 <p class="text-xs uppercase text-slate-700 dark:text-slate-300 ml-4">Last Updated: {{page.date.toUTCString()}}</p>
 <p class="text-xs uppercase text-slate-700 dark:text-slate-300 ml-4">Latest CDKTF: {{repos[0].latestCdktfVersion}}</p>
+<p class="text-xs uppercase text-slate-700 dark:text-slate-300 ml-4">Latest CDKTN: {{repos[0].latestCdktnVersion}}</p>
 <p class="text-xs uppercase text-slate-700 dark:text-slate-300 ml-4 mb-6">
     Total Providers: {{repos.length}}, of which {{repos[0].numArchived}} {% if repos[0].numArchived === 1 %}is{% else %}are{% endif %} deprecated & archived
 </p>
@@ -23,7 +24,7 @@ layout: base
     <div class="bg-slate-100 dark:bg-slate-800 rounded p-2 drop-shadow-md m-4 max-w-sm">
         <!-- Provider Header -->
         <h2 class="text-xl capitalize font-bold flex flex-row items-center space-x-2 ml-2 text-slate-700 dark:text-slate-300">
-            <a href={{repo.html_url}} target="_blank">{{ repo.name.replace("cdktf-provider-", "") }}</a>
+            <a href={{repo.html_url}} target="_blank">{{ repo.name.replace("cdktn-provider-", "") }}</a>
             {% if repo.archived %}
             <a class="flex flex-row items-center space-x-1" href="{{repo.html_url}}/issues">
                 <span class="fill-slate-600 dark:fill-slate-400">{% githubIcon 'archive' %}</span>
@@ -51,7 +52,7 @@ layout: base
                 {% endif %}
                 <span>{{ repo.packageJson.cdktf.provider.version }} / </span> <span>{{repo.provider.latestVersion}}</span>
             </span>
-            <span title="CDKTF Dependency Version">{{ repo.packageJson.peerDependencies.cdktf }}</span>
+            <span title="CDKTN Dependency Version">{{ repo.packageJson.peerDependencies.cdktn or repo.packageJson.peerDependencies.cdktf }}</span>
             <span>{{ repo.latestRelease.published_at | daysAgo }}</span>
         </h2>
         <!-- Package Manager Releases -->
@@ -60,14 +61,8 @@ layout: base
             <a class="flex flex-row items-center space-x-1 {{ "text-rose-500" if ("v" + repo.packageManagerVersions.npm.version) !== repo.latestRelease.tag_name }}" href={{repo.packageManagerVersions.npm.packageUrl}}>
                 NPM: {{ repo.packageManagerVersions.npm.version | default("?", true) }}</a>
             </a>
-            <a class="flex flex-row items-center space-x-1 {{ "text-rose-500" if ("v" + repo.packageManagerVersions.maven.version) !== repo.latestRelease.tag_name }}" href={{repo.packageManagerVersions.maven.packageUrl}}>
-                Maven: {{ repo.packageManagerVersions.maven.version | default("?", true) }}</a>
-            </a>
             <a class="flex flex-row items-center space-x-1 {{ "text-rose-500" if ("v" + repo.packageManagerVersions.pypi.version) !== repo.latestRelease.tag_name }}" href={{repo.packageManagerVersions.pypi.packageUrl}}>
                 PyPI: {{ repo.packageManagerVersions.pypi.version | default("?", true) }}</a>
-            </a>
-            <a class="flex flex-row items-center space-x-1 {{ "text-rose-500" if ("v" + repo.packageManagerVersions.nuget.version) !== repo.latestRelease.tag_name }}" href={{repo.packageManagerVersions.nuget.packageUrl}}>
-                NuGet: {{ repo.packageManagerVersions.nuget.version | default("?", true) }}</a>
             </a>
             <a class="flex flex-row items-center space-x-1 {{ "text-rose-500" if ("v" + repo.packageManagerVersions.go.version) !== repo.latestRelease.tag_name }}" href={{repo.packageManagerVersions.go.packageUrl}}>
                 Go: {{ repo.packageManagerVersions.go.version | default("?", true) }}</a>
