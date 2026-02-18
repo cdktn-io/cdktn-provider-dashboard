@@ -78,6 +78,7 @@ jobs:
         with:
           publish_dir: ./_site
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          cname: provider-dashboard.cdktn.io
   # report:
   #   name: Report status
   #   runs-on: ubuntu-latest
