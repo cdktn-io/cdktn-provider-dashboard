@@ -3,15 +3,18 @@
  SPDX-License-Identifier: MPL-2.0
 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Provider Status -- {{title}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/tailwind.css' | url }}">
   </head>
-  <body class="bg-white dark:bg-slate-900">
+  <body class="bg-background-dark font-sans">
     {{content | safe}}
   </body>
 </html>

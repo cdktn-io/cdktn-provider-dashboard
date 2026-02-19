@@ -30,7 +30,7 @@ Then point your browser to http://localhost:8080/cdktn-provider-dashboard/
 The local build uses the `repos.json` file within the `_data` folder that has a snapshot of the last run. If you make changes to `scripts/collect-status.js` or want to test latest data, you can run the following command:
 
 ```bash
-GITHUB_TOKEN=$(gh auth token) ./scripts/collect-status.js
+GITHUB_TOKEN=$(gh auth token) node ./scripts/collect-status.js
 ```
 
 Assuming that you have the Github CLI installed and have a valid token. If not, you can run `collect-status` without a token, but it will take a lot longer to run due to rate limiting.
