@@ -37,7 +37,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
         with:
-          node-version: 18
+          # Match mise.toml, which pins node 24 for local development. Node 18
+          # went EOL 2025-04-30, so CI was building on an unsupported runtime
+          # while contributors used 24 -- drift that hides breakage either way.
+          node-version: 24
       - name: Install dependencies
         run: |
           yarn install --frozen-lockfile
