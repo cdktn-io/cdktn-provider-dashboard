@@ -60,18 +60,19 @@ layout: base
             <span>{{ repo.latestRelease.published_at | daysAgo }}</span>
         </h2>
         <!-- Package Manager Releases -->
-        <h3 class="text-sm flex flex-row items-center space-x-2 ml-2 text-gray-400 max-w-sm">
+        <h3 class="text-sm flex flex-row flex-wrap items-center gap-x-2 gap-y-0.5 ml-2 text-gray-400 max-w-sm">
             <span class="fill-gray-500">{% if repo.packageManagerVersions.npm.isDeprecated %}{% githubIcon 'moon' %}{% else %}{% githubIcon 'globe' %}{% endif %}</span>
             <a class="flex flex-row items-center space-x-1 font-mono {{ "text-rose-500" if ("v" + repo.packageManagerVersions.npm.version) !== repo.latestRelease.tag_name }}" href={{repo.packageManagerVersions.npm.packageUrl}}>
                 NPM: {{ repo.packageManagerVersions.npm.version | default("?", true) }}</a>
-            </a>
             <a class="flex flex-row items-center space-x-1 font-mono {{ "text-rose-500" if ("v" + repo.packageManagerVersions.pypi.version) !== repo.latestRelease.tag_name }}" href={{repo.packageManagerVersions.pypi.packageUrl}}>
                 PyPI: {{ repo.packageManagerVersions.pypi.version | default("?", true) }}</a>
-            </a>
             <a class="flex flex-row items-center space-x-1 font-mono {{ "text-rose-500" if ("v" + repo.packageManagerVersions.go.version) !== repo.latestRelease.tag_name }}" href={{repo.packageManagerVersions.go.packageUrl}}>
                 Go: {{ repo.packageManagerVersions.go.version | default("?", true) }}</a>
-            </a>
-        </h2>
+            <a class="flex flex-row items-center space-x-1 font-mono {{ "text-rose-500" if ("v" + repo.packageManagerVersions.maven.version) !== repo.latestRelease.tag_name }}" href={{repo.packageManagerVersions.maven.packageUrl}}>
+                Maven: {{ repo.packageManagerVersions.maven.version | default("?", true) }}</a>
+            <a class="flex flex-row items-center space-x-1 font-mono {{ "text-rose-500" if ("v" + repo.packageManagerVersions.nuget.version) !== repo.latestRelease.tag_name }}" href={{repo.packageManagerVersions.nuget.packageUrl}}>
+                NuGet: {{ repo.packageManagerVersions.nuget.version | default("?", true) }}</a>
+        </h3>
         {% if repo.archived !== true %}
         <ul class="flex flex-row flex-wrap max-w-sm mt-4">
             {% for workflow in repo.workflows | sortWorkflows %}

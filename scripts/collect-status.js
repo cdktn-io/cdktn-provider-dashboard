@@ -97,11 +97,15 @@ async function getPackageJson(github, repoName) {
   }
 }
 
+const MAVEN_GROUP_ID = "io.cdktn";
+
 const providerNameOverrides = {
   googlebeta: {
     typescript: "google-beta",
     python: "google_beta",
     go: "googlebeta",
+    java: "google-beta",
+    dotnet: "GoogleBeta",
   },
 };
 
@@ -119,6 +123,16 @@ function convertRepoNameForLanguage(repoName, language) {
       return `cdktn-provider-${providerName}`;
     case "go":
       return `github.com/cdktn-io/cdktn-provider-${providerName}-go/${providerName}`;
+    case "java":
+      // Maven coordinates, the artifactId half of `groupId:artifactId`
+      return `cdktn-provider-${providerName}`;
+    case "dotnet":
+      // NuGet package ids are PascalCased, e.g. Io.Cdktn.Providers.Aws
+      return `Io.Cdktn.Providers.${
+        hasOverrides
+          ? providerName
+          : providerName.charAt(0).toUpperCase() + providerName.slice(1)
+      }`;
   }
 }
 
@@ -208,6 +222,83 @@ async function getGoReleaseVersion(repoName) {
   return {
     version,
     packageUrl: `https://pkg.go.dev/${packageName}/v${version.split(".")[0]}`,
+  };
+}
+
+async function getMavenPackageVersion(repoName) {
+  const artifactId = convertRepoNameForLanguage(repoName, "java");
+  const groupPath = MAVEN_GROUP_ID.replace(/\./g, "/");
+  const url = `https://repo1.maven.org/maven2/${groupPath}/${artifactId}/maven-metadata.xml`;
+  const packageUrl = `https://central.sonatype.com/artifact/${MAVEN_GROUP_ID}/${artifactId}`;
+  let metadata;
+
+  try {
+    const response = await fetch(url, {
+      signal: AbortSignal.timeout(5000), // timeout the API call after 5 seconds
+    });
+    if (!response.ok) {
+      return null;
+    }
+    metadata = await response.text();
+  } catch (e) {
+    if (e.name === "TimeoutError" || e.name === "AbortError") {
+      console.error(`Request to ${url} timed out after 5 seconds`);
+    }
+    return null;
+  }
+
+  // maven-metadata.xml has no JSON equivalent, so pull the versions out directly
+  const versions = [...metadata.matchAll(/<version>([^<]+)<\/version>/g)]
+    .map((match) => match[1])
+    .filter((version) => semver.valid(version) && !semver.prerelease(version));
+  const version =
+    semver.rsort(versions)[0] ||
+    (metadata.match(/<release>([^<]+)<\/release>/) || [])[1];
+
+  if (!version) {
+    return null;
+  }
+
+  return {
+    version,
+    packageUrl,
+  };
+}
+
+async function getNugetPackageVersion(repoName) {
+  const packageName = convertRepoNameForLanguage(repoName, "dotnet");
+  // the flat container index only serves lower cased package ids
+  const url = `https://api.nuget.org/v3-flatcontainer/${packageName.toLowerCase()}/index.json`;
+  let data;
+
+  try {
+    const response = await fetch(url, {
+      signal: AbortSignal.timeout(5000), // timeout the API call after 5 seconds
+    });
+    if (!response.ok) {
+      return null;
+    }
+    data = await response.json();
+  } catch (e) {
+    if (e.name === "TimeoutError" || e.name === "AbortError") {
+      console.error(`Request to ${url} timed out after 5 seconds`);
+    }
+    return null;
+  }
+
+  const version = semver.rsort(
+    (data.versions || []).filter(
+      (version) => semver.valid(version) && !semver.prerelease(version)
+    )
+  )[0];
+
+  if (!version) {
+    return null;
+  }
+
+  return {
+    version,
+    packageUrl: `https://www.nuget.org/packages/${packageName}`,
   };
 }
 
@@ -401,6 +492,8 @@ async function delay(ms) {
       npm: await getNpmPackageVersion(repo.name),
       pypi: await getPypiPackageVersion(repo.name),
       go: await getGoReleaseVersion(repo.name),
+      maven: await getMavenPackageVersion(repo.name),
+      nuget: await getNugetPackageVersion(repo.name),
     };
 
     if (!authToken || !authToken.token) {
