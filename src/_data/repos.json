@@ -119,11 +119,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -6217,6 +6234,14 @@
       "go": {
         "version": "15.0.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-acme-go/acme/v15"
+      },
+      "maven": {
+        "version": "15.0.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-acme"
+      },
+      "nuget": {
+        "version": "15.0.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Acme"
       }
     }
   },
@@ -6340,11 +6365,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -13338,6 +13380,14 @@
       "go": {
         "version": "14.0.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-archive-go/archive/v14"
+      },
+      "maven": {
+        "version": "14.0.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-archive"
+      },
+      "nuget": {
+        "version": "14.0.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Archive"
       }
     }
   },
@@ -13461,11 +13511,28 @@
     "watchers": 9,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -20459,6 +20526,14 @@
       "go": {
         "version": "25.4.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-aws-go/aws/v25"
+      },
+      "maven": {
+        "version": "25.4.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-aws"
+      },
+      "nuget": {
+        "version": "25.4.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Aws"
       }
     }
   },
@@ -20582,11 +20657,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -27132,6 +27224,14 @@
       "go": {
         "version": "1.4.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-awscc-go/awscc/v1"
+      },
+      "maven": {
+        "version": "1.4.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-awscc"
+      },
+      "nuget": {
+        "version": "1.4.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Awscc"
       }
     }
   },
@@ -27255,11 +27355,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -34253,6 +34370,14 @@
       "go": {
         "version": "17.0.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-azuread-go/azuread/v17"
+      },
+      "maven": {
+        "version": "17.0.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-azuread"
+      },
+      "nuget": {
+        "version": "17.0.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Azuread"
       }
     }
   },
@@ -34376,11 +34501,28 @@
     "watchers": 1,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -40702,6 +40844,14 @@
       "go": {
         "version": "18.4.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-azurerm-go/azurerm/v18"
+      },
+      "maven": {
+        "version": "18.4.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-azurerm"
+      },
+      "nuget": {
+        "version": "18.4.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Azurerm"
       }
     }
   },
@@ -40825,11 +40975,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -47373,6 +47540,14 @@
       "go": {
         "version": "1.1.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-cfncompat-go/cfncompat/v1"
+      },
+      "maven": {
+        "version": "1.1.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-cfncompat"
+      },
+      "nuget": {
+        "version": "1.1.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Cfncompat"
       }
     }
   },
@@ -47496,11 +47671,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -54494,6 +54686,14 @@
       "go": {
         "version": "16.1.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v16"
+      },
+      "maven": {
+        "version": "16.1.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-cloudflare"
+      },
+      "nuget": {
+        "version": "16.1.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Cloudflare"
       }
     }
   },
@@ -54617,11 +54817,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -61613,6 +61830,14 @@
       "go": {
         "version": "14.0.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-cloudinit-go/cloudinit/v14"
+      },
+      "maven": {
+        "version": "14.0.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-cloudinit"
+      },
+      "nuget": {
+        "version": "14.0.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Cloudinit"
       }
     }
   },
@@ -61736,11 +61961,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -68734,6 +68976,14 @@
       "go": {
         "version": "18.5.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-databricks-go/databricks/v18"
+      },
+      "maven": {
+        "version": "18.5.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-databricks"
+      },
+      "nuget": {
+        "version": "18.5.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Databricks"
       }
     }
   },
@@ -68857,11 +69107,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -76353,6 +76620,14 @@
       "go": {
         "version": "16.1.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-datadog-go/datadog/v16"
+      },
+      "maven": {
+        "version": "16.1.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-datadog"
+      },
+      "nuget": {
+        "version": "16.1.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Datadog"
       }
     }
   },
@@ -76476,11 +76751,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -83472,6 +83764,14 @@
       "go": {
         "version": "13.0.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-dns-go/dns/v13"
+      },
+      "maven": {
+        "version": "13.0.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-dns"
+      },
+      "nuget": {
+        "version": "13.0.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Dns"
       }
     }
   },
@@ -83595,11 +83895,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -90593,6 +90910,14 @@
       "go": {
         "version": "16.1.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-docker-go/docker/v16"
+      },
+      "maven": {
+        "version": "16.1.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-docker"
+      },
+      "nuget": {
+        "version": "16.1.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Docker"
       }
     }
   },
@@ -90716,11 +91041,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -97714,6 +98056,14 @@
       "go": {
         "version": "14.0.1",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-external-go/external/v14"
+      },
+      "maven": {
+        "version": "14.0.1",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-external"
+      },
+      "nuget": {
+        "version": "14.0.1",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.External"
       }
     }
   },
@@ -97837,11 +98187,28 @@
     "watchers": 6,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -104835,6 +105202,14 @@
       "go": {
         "version": "18.0.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-github-go/github/v18"
+      },
+      "maven": {
+        "version": "18.0.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-github"
+      },
+      "nuget": {
+        "version": "18.0.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Github"
       }
     }
   },
@@ -104958,11 +105333,28 @@
     "watchers": 1,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -111284,6 +111676,14 @@
       "go": {
         "version": "20.3.1",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-google-go/google/v20"
+      },
+      "maven": {
+        "version": "20.3.1",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-google"
+      },
+      "nuget": {
+        "version": "20.3.1",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Google"
       }
     }
   },
@@ -111407,11 +111807,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -117733,6 +118150,14 @@
       "go": {
         "version": "20.3.1",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-googlebeta-go/googlebeta/v20"
+      },
+      "maven": {
+        "version": "20.3.1",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-google-beta"
+      },
+      "nuget": {
+        "version": "20.3.1",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.GoogleBeta"
       }
     }
   },
@@ -117856,11 +118281,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -124850,6 +125292,14 @@
       "go": {
         "version": "13.1.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-hcp-go/hcp/v13"
+      },
+      "maven": {
+        "version": "13.1.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-hcp"
+      },
+      "nuget": {
+        "version": "13.1.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Hcp"
       }
     }
   },
@@ -124973,11 +125423,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -131971,6 +132438,14 @@
       "go": {
         "version": "15.1.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-helm-go/helm/v15"
+      },
+      "maven": {
+        "version": "15.1.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-helm"
+      },
+      "nuget": {
+        "version": "15.1.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Helm"
       }
     }
   },
@@ -132094,11 +132569,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -139092,6 +139584,14 @@
       "go": {
         "version": "13.0.1",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-http-go/http/v13"
+      },
+      "maven": {
+        "version": "13.0.1",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-http"
+      },
+      "nuget": {
+        "version": "13.0.1",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Http"
       }
     }
   },
@@ -139215,11 +139715,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -146213,6 +146730,14 @@
       "go": {
         "version": "17.0.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-kubernetes-go/kubernetes/v17"
+      },
+      "maven": {
+        "version": "17.0.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-kubernetes"
+      },
+      "nuget": {
+        "version": "17.0.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Kubernetes"
       }
     }
   },
@@ -146336,11 +146861,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -153332,6 +153874,14 @@
       "go": {
         "version": "14.0.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-local-go/local/v14"
+      },
+      "maven": {
+        "version": "14.0.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-local"
+      },
+      "nuget": {
+        "version": "14.0.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Local"
       }
     }
   },
@@ -153455,11 +154005,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -159781,6 +160348,14 @@
       "go": {
         "version": "16.1.1",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-newrelic-go/newrelic/v16"
+      },
+      "maven": {
+        "version": "16.1.1",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-newrelic"
+      },
+      "nuget": {
+        "version": "16.1.1",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Newrelic"
       }
     }
   },
@@ -159904,11 +160479,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -166902,6 +167494,14 @@
       "go": {
         "version": "15.0.1",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-null-go/null/v15"
+      },
+      "maven": {
+        "version": "15.0.1",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-null"
+      },
+      "nuget": {
+        "version": "15.0.1",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Null"
       }
     }
   },
@@ -167025,11 +167625,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -174023,6 +174640,14 @@
       "go": {
         "version": "17.1.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-pagerduty-go/pagerduty/v17"
+      },
+      "maven": {
+        "version": "17.1.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-pagerduty"
+      },
+      "nuget": {
+        "version": "17.1.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Pagerduty"
       }
     }
   },
@@ -174146,11 +174771,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -180246,6 +180888,14 @@
       "go": {
         "version": "15.0.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-postgresql-go/postgresql/v15"
+      },
+      "maven": {
+        "version": "15.0.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-postgresql"
+      },
+      "nuget": {
+        "version": "15.0.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Postgresql"
       }
     }
   },
@@ -180369,11 +181019,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -187365,6 +188032,14 @@
       "go": {
         "version": "15.0.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-random-go/random/v15"
+      },
+      "maven": {
+        "version": "15.0.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-random"
+      },
+      "nuget": {
+        "version": "15.0.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Random"
       }
     }
   },
@@ -187488,11 +188163,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -194486,6 +195178,14 @@
       "go": {
         "version": "18.1.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-snowflake-go/snowflake/v18"
+      },
+      "maven": {
+        "version": "18.1.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-snowflake"
+      },
+      "nuget": {
+        "version": "18.1.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Snowflake"
       }
     }
   },
@@ -194596,11 +195296,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {},
@@ -194631,7 +195348,9 @@
     "packageManagerVersions": {
       "npm": null,
       "pypi": null,
-      "go": null
+      "go": null,
+      "maven": null,
+      "nuget": null
     }
   },
   {
@@ -194754,11 +195473,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -201752,6 +202488,14 @@
       "go": {
         "version": "14.0.1",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-time-go/time/v14"
+      },
+      "maven": {
+        "version": "14.0.1",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-time"
+      },
+      "nuget": {
+        "version": "14.0.1",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Time"
       }
     }
   },
@@ -201875,11 +202619,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -208873,6 +209634,14 @@
       "go": {
         "version": "14.1.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-tls-go/tls/v14"
+      },
+      "maven": {
+        "version": "14.1.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-tls"
+      },
+      "nuget": {
+        "version": "14.1.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Tls"
       }
     }
   },
@@ -208996,11 +209765,28 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": false,
-      "maintain": false,
-      "push": false,
-      "triage": false,
-      "pull": false
+      "admin": true,
+      "maintain": true,
+      "push": true,
+      "triage": true,
+      "pull": true
+    },
+    "security_and_analysis": {
+      "secret_scanning": {
+        "status": "disabled"
+      },
+      "secret_scanning_push_protection": {
+        "status": "disabled"
+      },
+      "dependabot_security_updates": {
+        "status": "enabled"
+      },
+      "secret_scanning_non_provider_patterns": {
+        "status": "disabled"
+      },
+      "secret_scanning_validity_checks": {
+        "status": "disabled"
+      }
     },
     "custom_properties": {},
     "workflows": {
@@ -215994,6 +216780,14 @@
       "go": {
         "version": "18.1.0",
         "packageUrl": "https://pkg.go.dev/github.com/cdktn-io/cdktn-provider-vault-go/vault/v18"
+      },
+      "maven": {
+        "version": "18.1.0",
+        "packageUrl": "https://central.sonatype.com/artifact/io.cdktn/cdktn-provider-vault"
+      },
+      "nuget": {
+        "version": "18.1.0",
+        "packageUrl": "https://www.nuget.org/packages/Io.Cdktn.Providers.Vault"
       }
     }
   }
