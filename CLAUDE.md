@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the **CDKTN prebuilt provider dashboard** — a static site that displays the health/status of all CDKTN pre-built providers across multiple package managers (npm, PyPI, Go). The dashboard is built with [11ty (Eleventy)](https://www.11ty.dev/) and styled with Tailwind CSS. It is deployed to GitHub Pages.
+This is the **CDKTN prebuilt provider dashboard** — a static site that displays the health/status of all CDKTN pre-built providers across multiple package managers (npm, PyPI, Go, Maven Central, NuGet). The dashboard is built with [11ty (Eleventy)](https://www.11ty.dev/) and styled with Tailwind CSS. It is deployed to GitHub Pages.
 
 ## Build & Development Commands
 
@@ -32,7 +32,7 @@ There are no tests in this project.
 
 ### Data Pipeline
 
-1. **`scripts/collect-status.js`** — Fetches live data from GitHub API and package registries. For each provider repo in the `cdktn-io` GitHub org, it collects: workflow run statuses, open issues/PRs, latest release, package.json contents, latest Terraform provider version, and published versions across 3 package managers (npm, PyPI, Go). Output is written to `src/_data/repos.json`.
+1. **`scripts/collect-status.js`** — Fetches live data from GitHub API and package registries. For each provider repo in the `cdktn-io` GitHub org, it collects: workflow run statuses, open issues/PRs, latest release, package.json contents, latest Terraform provider version, and published versions across 5 package managers (npm, PyPI, Go, Maven Central, NuGet). Output is written to `src/_data/repos.json`.
 
 2. **`src/_data/repos.json`** — Snapshot of collected data. Committed to the repo so local dev doesn't require API calls. The `update-data.yml` workflow refreshes this weekly via automated PR.
 

@@ -41,6 +41,10 @@ function sortByProblems(a, b) {
     isPackageManagerOutOfDate("pypi", b) -
       isPackageManagerOutOfDate("pypi", a) ||
     isPackageManagerOutOfDate("go", b) - isPackageManagerOutOfDate("go", a) ||
+    isPackageManagerOutOfDate("maven", b) -
+      isPackageManagerOutOfDate("maven", a) ||
+    isPackageManagerOutOfDate("nuget", b) -
+      isPackageManagerOutOfDate("nuget", a) ||
     b.issues.length - a.issues.length ||
     b.pulls.length - a.pulls.length
   );
