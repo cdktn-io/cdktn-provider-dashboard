@@ -119,28 +119,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -6365,28 +6348,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -13511,28 +13477,11 @@
     "watchers": 9,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -20657,28 +20606,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -27355,28 +27287,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -34501,28 +34416,11 @@
     "watchers": 1,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -40975,28 +40873,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -47671,28 +47552,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -54817,28 +54681,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -61961,28 +61808,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -69107,28 +68937,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -76751,28 +76564,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -83895,28 +83691,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -91041,28 +90820,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -98187,28 +97949,11 @@
     "watchers": 6,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -105333,28 +105078,11 @@
     "watchers": 1,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -111807,28 +111535,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -118281,28 +117992,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -125423,28 +125117,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -132569,28 +132246,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -139715,28 +139375,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -146861,28 +146504,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -154005,28 +153631,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -160479,28 +160088,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -167625,28 +167217,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -174771,28 +174346,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -181019,28 +180577,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -188163,28 +187704,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -195296,28 +194820,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {},
@@ -195473,28 +194980,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -202619,28 +202109,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
@@ -209765,28 +209238,11 @@
     "watchers": 0,
     "default_branch": "main",
     "permissions": {
-      "admin": true,
-      "maintain": true,
-      "push": true,
-      "triage": true,
-      "pull": true
-    },
-    "security_and_analysis": {
-      "secret_scanning": {
-        "status": "disabled"
-      },
-      "secret_scanning_push_protection": {
-        "status": "disabled"
-      },
-      "dependabot_security_updates": {
-        "status": "enabled"
-      },
-      "secret_scanning_non_provider_patterns": {
-        "status": "disabled"
-      },
-      "secret_scanning_validity_checks": {
-        "status": "disabled"
-      }
+      "admin": false,
+      "maintain": false,
+      "push": false,
+      "triage": false,
+      "pull": false
     },
     "custom_properties": {},
     "workflows": {
